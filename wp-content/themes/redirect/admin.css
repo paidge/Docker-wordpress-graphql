@@ -1,0 +1,12 @@
+/*#menu-appearance,*/
+/*#toplevel_page_netlifypress_options,*/
+/*#menu-plugins*/
+/*#menu-tools*/
+/*#menu-settings*/
+#menu-comments {
+	display: none;
+}
+
+#adminmenu .separator {
+	background: #9ba2a6;
+}
