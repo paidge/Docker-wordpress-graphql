@@ -2,14 +2,15 @@ FROM php:8.0-apache
 
 WORKDIR /var/www/html
 
-ARG WP_LANGUAGE=en_EN
+ARG WP_LANGUAGE="en_EN"
 
 ENV \
     WORDPRESS_ADMIN_USERNAME='admin' \
     WORDPRESS_ADMIN_PASSWORD='admin123' \
     WORDPRESS_ADMIN_EMAIL="admin@example.com" \
     WORDPRESS_URL="localhost" \
-    WORDPRESS_TITLE="My localhost site"
+    WORDPRESS_TITLE="My localhost site" \
+		WP_LANGUAGE="en_EN"
 
 # persistent dependencies
 RUN set -eux; \
