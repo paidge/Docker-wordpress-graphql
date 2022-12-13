@@ -2,7 +2,7 @@ FROM php:8.0-apache
 
 WORKDIR /var/www/html
 
-ARG WP_LANGUAGE="en_EN"
+ARG WORDPRESS_LANGUAGE="en_EN"
 
 ENV \
     WORDPRESS_ADMIN_USERNAME='admin' \
@@ -10,7 +10,7 @@ ENV \
     WORDPRESS_ADMIN_EMAIL="admin@example.com" \
     WORDPRESS_URL="localhost" \
     WORDPRESS_TITLE="My localhost site" \
-		WP_LANGUAGE="en_EN"
+		WORDPRESS_LANGUAGE="en_EN"
 
 # persistent dependencies
 RUN set -eux; \
@@ -137,7 +137,7 @@ RUN cd /tmp && curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/
 # Install Wordpress
 RUN set -eux; \
 		chown -R www-data:www-data /var/www; \
-    sudo -u www-data wp core download --locale=${WP_LANGUAGE}; \
+    sudo -u www-data wp core download --locale=${WORDPRESS_LANGUAGE}; \
     # https://wordpress.org/support/article/htaccess/
 	[ ! -e /var/www/html/.htaccess ]; \
 	{ \

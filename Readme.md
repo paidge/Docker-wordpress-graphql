@@ -49,7 +49,7 @@ Supports these enviromental variables:
 | WORDPRESS_ADMIN_EMAIL    | *admin@example.com* | The administrator email. (Recomended to change.)                         |
 | WORDPRESS_URL            | _localhost_         | Your site's url. **PLEASE SET AS CONTAINERS IP. TESTED WITH THAT**       |
 | WORDPRESS_TITLE          | _My localhost site_ | The title to be displayed when generating the site.                      |
-| WP_LANGUAGE              | _en_EN_             | The title to be displayed when generating the site.                      |
+| WORDPRESS_LANGUAGE       | _en_EN_             | The language of the site.                                                |
 
 **NOTE:**
 `WORDPRESS_ADMIN_USERNAME` must have a **DIFFERENT** value from **WORDPRESS_ADMIN_PASSWORD** in order to be able to login to wordpress dashboard.

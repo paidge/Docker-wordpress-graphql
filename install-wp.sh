@@ -25,7 +25,7 @@ echo "======================================="
 echo "========= LANGUAGE ACTIVATION ========="
 echo "======================================="
 
-${COMMAND} language core install ${WP_LANGUAGE} --activate
+${COMMAND} language core install ${WORDPRESS_LANGUAGE} --activate
 
 echo "======================================="
 echo "======= PLUGINS INSTALLATION ========"
