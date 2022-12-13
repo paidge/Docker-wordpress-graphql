@@ -12,13 +12,13 @@ By default here are the following plugins installed :
 
 You can personalize the list by editing the `install-wp.sh` file.`
 
-There is also a custom plugin*Redirect* with these features :
+There is also a custom plugin _Redirect_ with these features :
 
 - redirect front-end to the URL of your choice
 - disable _Gutenberg_ (useless with JAMstack)
 - add blog thumbnails
 - expose native custom fields (meta) in GraphQL
-- active Menu Locations so that you can create menus and expose them with graphQL
+- activate Menu Locations so that you can create menus and expose them with graphQL
 
 ## Built & run
 
