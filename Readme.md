@@ -25,7 +25,7 @@ docker-compose build
 docker-compose up -d
 ```
 
-You can visit the _WORDPRESS_URL_/wp-login.php and connect.
+You can visit the **_WORDPRESS_URL_/wp-login.php** and connect.
 
 Front pages will redirect to the URL you will have provided in `wp-content/themes/redirect/index.php`.
 
