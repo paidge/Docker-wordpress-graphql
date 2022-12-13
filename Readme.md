@@ -3,6 +3,13 @@
 The docker image uses the original wordpress one without installing Wordpress and installs wp-cli to launch the installation.
 Then it installs some plugins for develloping front with WP GRAPHQL.
 
+By default here are the following plugins installed :
+
+- _WPGraphQL_ to expose REST API with GrahQL
+- _Atlas Content Modeler plugin_ to create new content types with custom fields
+- _PRyC WP: TinyMCE more buttons_ to add buttons to the WYSIWYG editor
+- _Deploy with NetlifyPress_ to redeploy your static website hosted to Netlify
+
 ## Built & run
 
 ```
@@ -10,7 +17,9 @@ git clone ^this_repo^
 cd ^repo_folder^
 ```
 
-Then edit the .env file and fix your language in Dockerfile ARG.
+1. Then edit the .env file
+2. Fix your language in Dockerfile ARG.
+3. Set your front URL in wp-content/themes/redirect/index.php
 
 ```
 docker-compose build

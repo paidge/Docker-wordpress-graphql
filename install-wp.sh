@@ -49,14 +49,6 @@ else
   ${COMMAND} plugin install atlas-content-modeler --activate
 fi
 
-if [ $(${COMMAND} plugin is-installed block-data-attribute) ]; then
-  echo "Update Block Data Attribute plugin"
-  ${COMMAND} plugin update block-data-attribute --activate
-else
-  echo "Install Block Data Attribute plugin"
-  ${COMMAND} plugin install block-data-attribute --activate
-fi
-
 if [ $(${COMMAND} plugin is-installed deploy-netlifypress) ]; then
   echo "Update Deploy with NetlifyPress plugin"
   ${COMMAND} plugin update deploy-netlifypress --activate
