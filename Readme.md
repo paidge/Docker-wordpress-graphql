@@ -1,4 +1,4 @@
-# Wordpress with preinstalled plugins
+# Docker image containing Wordpress with preinstalled plugins for JAMstack with graphQL
 
 The docker image uses the original wordpress one without installing Wordpress and installs wp-cli to launch the installation.
 Then it installs some plugins for develloping front with WP GRAPHQL.
