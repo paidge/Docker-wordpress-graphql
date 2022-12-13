@@ -10,20 +10,21 @@ By default here are the following plugins installed :
 - _PRyC WP: TinyMCE more buttons_ to add buttons to the WYSIWYG editor
 - _Deploy with NetlifyPress_ to redeploy your static website hosted to Netlify when publicating new content
 
-You can personalize the list by editing the `install-wp.sh` file.`
+You can personalize the list by editing the `install-wp.sh` file.
 
 There is also a custom plugin _Redirect_ with these features :
 
-- redirect front-end to the URL of your choice
-- disable _Gutenberg_ (useless with JAMstack)
-- add blog thumbnails
-- expose native custom fields (meta) in GraphQL
-- activate Menu Locations so that you can create menus and expose them with graphQL
+- redirect front-end to the URL of your choice (see `wp-content/themes/redirect/index.php`)
+- disable _Gutenberg_ (useless with JAMstack) (see `use_block_editor_for_post_type` filter in `wp-content/themes/redirect/functions.php`)
+- add blog thumbnails (see `after_setup_theme` action in `wp-content/themes/redirect/functions.php`)
+- expose native custom fields (meta) in GraphQL (see `graphql_register_types` action in `wp-content/themes/redirect/functions.php`)
+- activate Menu Locations so that you can create menus and expose them with graphQL (see `register_nav_menu()` function in `wp-content/themes/redirect/functions.php`)
+- allow you to personalize backend CSS (see `wp-content/themes/redirect/admin.css`)
 
 ## Built & run
 
 ```
-git clone [^this_repo^](https://github.com/paidge/Docker-wordpress-graphql.git)
+git clone https://github.com/paidge/Docker-wordpress-graphql.git
 cd Docker-wordpress-graphql
 ```
 
@@ -35,7 +36,7 @@ docker-compose build
 docker-compose up -d
 ```
 
-You can visit the **_WORDPRESS_URL_/wp-login.php** and connect.
+You can visit the **_WORDPRESS_URL_/wp-login.php** and connect to play with Wordpress.
 
 Front pages will redirect to the URL you will have provided in `wp-content/themes/redirect/index.php`.
 
