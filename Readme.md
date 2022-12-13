@@ -5,10 +5,13 @@ Then it installs some plugins for develloping front with WP GRAPHQL.
 
 By default here are the following plugins installed :
 
+- Custom plugin _Redirect_ to redirect front-end
 - _WPGraphQL_ to expose REST API with GraphQL
 - _Atlas Content Modeler plugin_ to create new content types with custom fields
 - _PRyC WP: TinyMCE more buttons_ to add buttons to the WYSIWYG editor
 - _Deploy with NetlifyPress_ to redeploy your static website hosted to Netlify when publicating new content
+
+You can personalize the list by editing the `install-wp.sh` file.`
 
 ## Built & run
 
