@@ -8,17 +8,17 @@ By default here are the following plugins installed :
 - _WPGraphQL_ to expose REST API with GraphQL
 - _Atlas Content Modeler plugin_ to create new content types with custom fields
 - _PRyC WP: TinyMCE more buttons_ to add buttons to the WYSIWYG editor
-- _Deploy with NetlifyPress_ to redeploy your static website hosted to Netlify when publicatingnew content
+- _Deploy with NetlifyPress_ to redeploy your static website hosted to Netlify when publicating new content
 
 ## Built & run
 
 ```
-git clone ^this_repo^
-cd ^repo_folder^
+git clone [^this_repo^](https://github.com/paidge/Docker-wordpress-graphql.git)
+cd Docker-wordpress-graphql
 ```
 
 1. Then edit the .env file
-2. Set your front URL in wp-content/themes/redirect/index.php to redirect the front
+2. Set your front URL in `wp-content/themes/redirect/index.php` to redirect the front
 
 ```
 docker-compose build
@@ -27,15 +27,17 @@ docker-compose up -d
 
 You can visit the _WORDPRESS_URL_/wp-login.php and connect.
 
+Front pages will redirect to the URL you will have provided in `wp-content/themes/redirect/index.php`.
+
 ## For production
+
+Please have a look on: https://github.com/ellakcy/wordpress-with-plugins-deployment-recipe
 
 For production you can install the following plugins to protect your site :
 
 - WPS Hide Login and WPS Limit Login.
 
 It seems there is an infinite redirection to /wp-login.php when they are pre-installed.
-
-Please have a look on: https://github.com/ellakcy/wordpress-with-plugins-deployment-recipe
 
 ### Enviromentall variables & configuration
 
